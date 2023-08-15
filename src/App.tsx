@@ -9,18 +9,20 @@ import Products from "./pages/products/products.tsx";
 import Navbar from "./components/navbar/Navbar.tsx";
 import Footer from "./components/footer/footer.tsx";
 import Menu from "./components/menu/menu.tsx";
+import Login from "./pages/login/Login";
+import "./styles/global.scss"
 
 function App() {
     const Layout = () => {
         return (
-            <div className={"main"}>
+            <div className="main">
                 <Navbar/>
                 <div className="container">
-                    <div className="menuConteiner">
+                    <div className="menuContainer">
                         <Menu/>
-                        <div className="contentContainer">
-                            <Outlet/>
-                        </div>
+                    </div>
+                    <div className="contentContainer">
+                        <Outlet/>
                     </div>
                 </div>
                 <Footer/>
@@ -46,6 +48,10 @@ function App() {
                     element: <Products/>
                 },
             ]
+        },
+        {
+            path: "/login",
+            element: <Login/>
         },
     ]);
 
