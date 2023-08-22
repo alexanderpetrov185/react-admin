@@ -7,8 +7,8 @@ import {
 import Users from "./pages/users/Users.tsx";
 import Products from "./pages/products/products.tsx";
 import Navbar from "./components/navbar/Navbar.tsx";
-import Footer from "./components/footer/footer.tsx";
-import Menu from "./components/menu/menu.tsx";
+import Footer from "./components/footer/Footer.tsx";
+import Menu from "./components/menu/Menu.tsx";
 import Login from "./pages/login/Login";
 import "./styles/global.scss"
 

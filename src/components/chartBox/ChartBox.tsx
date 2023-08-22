@@ -20,7 +20,7 @@ const ChartBox = (props: Props) => {
                     <img src={props.icon} alt={props.icon}/>
                     <span>{props.title}</span>
                 </div>
-                <h2>{props.number}</h2>
+                <h1>{props.number}</h1>
                 <Link to={"/"} style={{color: props.color}}>ViewAll</Link>
             </div>
             <div className="chartInfo">
@@ -47,7 +47,6 @@ const ChartBox = (props: Props) => {
                     <span className="duration">this month</span>
                 </div>
             </div>
-
         </div>
     );
 };
