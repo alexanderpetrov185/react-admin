@@ -1,10 +1,15 @@
+@import "../../styles/responsive.scss";
+
 .topBox {
   h1 {
     margin-bottom: 20px;
+
+    @include xxl {
+      font-size: 24px;
+    }
   }
 
   .list {
-
     .listItem {
       display: flex;
       align-items: center;
@@ -20,6 +25,14 @@
           height: 40px;
           object-fit: cover;
           border-radius: 50%;
+
+          @include xxl {
+            display: none;
+          }
+
+          @include lg {
+            display: block;
+          }
         }
 
         .userText {
@@ -35,13 +48,20 @@
           .email {
             font-size: 12px;
             font-weight: 500;
+
+            @include xxl {
+              display: none;
+            }
+
+            @include lg {
+              display: block;
+            }
           }
         }
 
         .amount {
-
+          font-weight: 500;
         }
-
       }
     }
   }

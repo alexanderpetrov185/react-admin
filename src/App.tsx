@@ -11,6 +11,8 @@ import Footer from "./components/footer/Footer.tsx";
 import Menu from "./components/menu/Menu.tsx";
 import Login from "./pages/login/Login";
 import "./styles/global.scss"
+import User from "./pages/user/User.tsx";
+import Product from "./pages/product/Product.tsx";
 
 function App() {
     const Layout = () => {
@@ -46,6 +48,14 @@ function App() {
                 {
                     path: "/products",
                     element: <Products/>
+                },
+                {
+                    path: "/users/:id",
+                    element: <User/>
+                },
+                {
+                    path: "/products/:id",
+                    element: <Product/>
                 },
             ]
         },
